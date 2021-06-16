@@ -6,8 +6,8 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 import requests,os
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
-TMDB_API_KEY=os.environ['TMDB_API_KEY']
+app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+TMDB_API_KEY='5750fd54e24e12a7c2585df82a8dfdf9'
 URL='https://api.themoviedb.org/3/search/movie'
 Bootstrap(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///top-lists.db'
